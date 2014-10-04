@@ -218,7 +218,7 @@
 				var str = get();
 				var price = price_format(str);
 				if (str != price) set(price);
-				if(parseFloat(str) == 0.0 && clearOnEmpty) set('');
+				if(parseFloat(to_number(str)) == 0.0 && clearOnEmpty) set('');
 			}
 
 			// Add prefix on focus
